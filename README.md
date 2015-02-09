@@ -2,7 +2,7 @@ Welcome in your university app project:
 
   * Contributors :
 
-	- Buchard Yannick
+	- Buchart Yannick
 
 	- Barrois Manon
 
