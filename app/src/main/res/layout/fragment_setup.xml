@@ -93,4 +93,12 @@
         android:layout_below="@+id/scenarioBar"
         android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/scenarioBar" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_below="@+id/gameplayBar"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
