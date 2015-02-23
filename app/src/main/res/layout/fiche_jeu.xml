@@ -2,26 +2,39 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/">
+    android:id="@+id/layout1">
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/titreJeu"
         android:text="TitreJeu"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="0dp"
+        android:layout_marginLeft="10dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp"
-        android:textSize="25dp" />
+        android:layout_marginTop="5dp"
+        android:textSize="22dp"
+        android:textIsSelectable="false"
+        android:editable="false"/>
+
+    <View
+        android:layout_height="1dp"
+        android:background="#640064"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/titreJeu"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
 
     <ImageView
-        android:layout_width="180dp"
-        android:layout_height="230dp"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
         android:id="@+id/imageView"
         android:src="@drawable/ic_launcher"
         android:layout_below="@+id/titreJeu"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -35,74 +48,156 @@
         android:layout_height="wrap_content"
         android:text="Date de sortie :"
         android:id="@+id/date"
+        android:textSize="13dp"
         android:layout_below="@+id/titreJeu"
-        android:layout_toEndOf="@+id/imageView2"
-        android:textSize="16dp" />
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="texte"
         android:id="@+id/dateText"
-        android:textSize="15dp"
+        android:textSize="12dp"
         android:layout_below="@+id/date"
-        android:layout_toEndOf="@+id/imageView" />
+        android:layout_alignStart="@+id/textView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developpeur : "
+        android:text="Editeur : "
         android:id="@+id/devText"
-        android:textSize="16dp"
+        android:textSize="13dp"
         android:layout_below="@+id/dateText"
         android:layout_toEndOf="@+id/imageView"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="6dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="texte"
         android:id="@+id/textView"
-        android:textSize="15dp"
+        android:textSize="12dp"
         android:layout_below="@+id/devText"
-        android:layout_toEndOf="@+id/imageView2" />
+        android:layout_alignEnd="@+id/textView4"
+        android:textIsSelectable="false" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Thème : "
         android:id="@+id/themeText"
-        android:textSize="16dp"
+        android:textSize="13dp"
+        android:textIsSelectable="false"
         android:layout_below="@+id/textView"
         android:layout_toEndOf="@+id/imageView"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="6dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="texte"
         android:id="@+id/textView2"
-        android:textSize="15dp"
+        android:textSize="12dp"
         android:layout_below="@+id/themeText"
-        android:layout_toEndOf="@+id/imageView2" />
+        android:layout_alignStart="@+id/textView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Genre :"
         android:id="@+id/textView3"
-        android:textSize="16dp"
+        android:textSize="13dp"
         android:layout_below="@+id/textView2"
         android:layout_toEndOf="@+id/imageView"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="6dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="texte"
         android:id="@+id/textView4"
-        android:textSize="15dp"
+        android:textSize="12dp"
         android:layout_below="@+id/textView3"
         android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classification : "
+        android:id="@+id/textView5"
+        android:textSize="13dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignEnd="@+id/date"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texte"
+        android:id="@+id/textView6"
+        android:textSize="12dp"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode :"
+        android:id="@+id/textView7"
+        android:textSize="13dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texte"
+        android:id="@+id/textView8"
+        android:textSize="12dp"
+        android:layout_below="@+id/textView7"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :"
+        android:id="@+id/textView9"
+        android:textSize="13dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texte"
+        android:id="@+id/textView10"
+        android:textSize="12dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <View
+        android:layout_height="1dp"
+        android:background="#640064"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commentaire "
+        android:id="@+id/textView11"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
 
 </RelativeLayout>

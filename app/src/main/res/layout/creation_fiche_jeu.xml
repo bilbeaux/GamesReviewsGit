@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titreJeu"
+        android:text="Création d&apos;une fiche de jeu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:textSize="22dp"
+        android:textIsSelectable="false"
+        android:editable="false"/>
+
+    <View
+        android:layout_height="1dp"
+        android:background="#640064"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/titreJeu"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/view" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de sortie :"
+        android:id="@+id/date"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editeur : "
+        android:id="@+id/devText"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thème : "
+        android:id="@+id/themeText"
+        android:textSize="13dp"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/editText4"
+        android:layout_alignEnd="@+id/devText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre :"
+        android:id="@+id/textView3"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/editText5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode :"
+        android:id="@+id/textView7"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/editText6"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_height="1dp"
+        android:background="#640064"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :"
+        android:id="@+id/textView13"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image :"
+        android:id="@+id/textView14"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plateforme :"
+        android:id="@+id/textView15"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classification : "
+        android:id="@+id/textView16"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/editText7"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView17"
+        android:layout_alignEnd="@+id/view"
+        android:layout_toEndOf="@+id/textView16" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignStart="@+id/editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText2"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignStart="@+id/editText3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/editText4"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignStart="@+id/editText4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/editText5"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignStart="@+id/editText5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignStart="@+id/editText6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginRight="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText9"
+        android:layout_below="@+id/editText8"
+        android:layout_alignEnd="@+id/editText7"
+        android:layout_alignStart="@+id/editText8" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="..."
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignEnd="@+id/view" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proposer cette fiche"
+        android:id="@+id/button2"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/editText9"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
