@@ -5,6 +5,8 @@
     <string name="title_section1">Liste des jeux</string>
     <string name="title_section2">Paramètres</string>
     <string name="title_section3">Gestion compte</string>
+    <string name="title_section4">Créer une fiche de jeu</string>
+    <string name="title_section5">Fiche de jeu test</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Bouton</string>

@@ -62,6 +62,12 @@ public class SetupActivity extends Activity implements NavigationDrawerFragment.
 		case 3:
 			mTitle = getString(R.string.title_section3);
 			break;
+        case 4:
+            mTitle = getString(R.string.title_section4);
+            break;
+        case 5:
+            mTitle = getString(R.string.title_section5);
+            break;
 		}
 	}
 
@@ -123,7 +129,7 @@ public class SetupActivity extends Activity implements NavigationDrawerFragment.
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_setup, container, false);
+			View rootView = inflater.inflate(R.layout.creation_fiche_jeu, container, false);
 			return rootView;
 		}
 
